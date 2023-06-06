@@ -82,11 +82,16 @@ header h1{
 }
 
 #input-section input::placeholder{
-    padding-left:25px;
+    padding-left:4px;
     font-family:'Roboto';
     font-weight:400;
     font-size:16px;
     color:hsla(233, 13%, 75%, 0.911);
+}
+
+#input-section input{
+    padding-left:25px;
+    font-family: 'Roboto';
 }
 
 #botao{
@@ -100,6 +105,11 @@ header h1{
     font-size:16px;
     font-weight:700;
     cursor:pointer;
+}
+
+#botao:hover{
+    background: linear-gradient(to right,hsl(345, 100%, 62%), hsl(4, 100%, 67%));
+    box-shadow: 0px 15px 30px hsla(4, 100%, 67%, 0.562);
 }
 
 
