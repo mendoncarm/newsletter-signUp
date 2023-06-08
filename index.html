@@ -7,60 +7,86 @@
     <title>Newsletter</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="java.js"></script>
+    <script src="java.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main class="container">
-        <div id="left">
-            <header>
-                <h1>Stay update!</h1>
-            </header>
-    
-            <div id="product-container">
-                <p class="paragraph">
-                    Join 60,000+ product managers receiving monthly<br>
-                    updates on:
-                </p>
-            </div>
-    
-            <div id="form-container">
-                <div id="list-container">
-                    <div id="icon-list">
-                        <img src="assets/images/icon-list.svg" alt="">
-                        <img src="assets/images/icon-list.svg" alt="">
-                        <img src="assets/images/icon-list.svg" alt="">
+    <main id="all">
+        <div id="container-all-informations" class="container">
+            <div id="left">
+                <header>
+                    <h1>Stay update!</h1>
+                </header>
+        
+                <div id="product-container">
+                    <p class="paragraph">
+                        Join 60,000+ product managers receiving monthly<br>
+                        updates on:
+                    </p>
+                </div>
+        
+                <div id="form-container">
+                    <div id="list-container">
+                        <div id="icon-list">
+                            <img src="assets/images/icon-list.svg" alt="">
+                            <img src="assets/images/icon-list.svg" alt="">
+                            <img src="assets/images/icon-list.svg" alt="">
+                        </div>
+            
+                        <div id="paragraph-container">
+                            <h2 class="paragraph">Product discovery and building what matters</h2>
+                            <h2 class="paragraph">Measuring to ensure updates are a success</h2>
+                            <h2 class="paragraph">And much more!</h2>
+                        </div>
                     </div>
         
-                    <div id="paragraph-container">
-                        <h2 class="paragraph">Product discovery and building what matters</h2>
-                        <h2 class="paragraph">Measuring to ensure updates are a success</h2>
-                        <h2 class="paragraph">And much more!</h2>
+                    <div id="email-container">
+                        <div id="input-section">
+                            <label for="">Emaill address</label>
+                            <input type="email" placeholder="email@company.com" id="email-input" required>
+                            <p id="errorMessage">Valid email required</p>
+                        </div>
+        
+                        <div>
+                            <button id="botao">Subscribe to monthly newsletter</button>
+                        </div>
                     </div>
                 </div>
+            </div>
     
-                <div id="email-container">
-                    <div id="input-section">
-                        <label for="">Emaill address</label>
-                        <input type="email" placeholder="email@company.com" required>
-                    </div>
-    
-                    <div>
-                        <button id="botao">Subscribe to monthly newsletter</button>
-                    </div>
+            <aside id="right">
+                <div id="right-image">
+                    <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
                 </div>
+            </aside>
+        </div>
+    </main>
+
+    <div id="okMessage">
+        <div id="container-all">
+            <div id="divImage">
+                <img src="assets/images/icon-success.svg" alt="">
+            </div>
+    
+            <div id="containerHeader">
+                <h1>Thanks for<br>
+                subscribing!</h1>
+            </div>
+    
+            <div id="paragraph-two">
+                <p class="paragraph">A confirmation email has been sent to <br>
+                <span id="spanEmail"></span>. Please open it and click<br>
+                the button inside to confirm your subscription.</p>
+            </div>
+    
+            <div>
+                <button id="botao2">Dismiss message</button>
             </div>
         </div>
-
-        <aside id="right">
-            <div id="right-image">
-                <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
-            </div>
-        </aside>
-    </main>
+    </div>
 
     
 </body>

@@ -4,17 +4,23 @@
 }
 
 body{
-    background-color: hsl(234, 29%, 20%);
+    background-color: hsl(234, 22%, 35%);
     font-family: 'Roboto';
 }
 
 .container{
     display:grid;
+    /*grid*/
     grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    /*grid-auto-columns: 1fr;*/
 }
 
-main{
+#container-all-informations{
+    opacity: 1;
+}
+
+#all{
+    
     background-color: white;
     width:fit-content;
 
@@ -73,6 +79,15 @@ header h1{
     margin-bottom:10px;
 }
 
+#errorMessage{
+    display:none;
+    font-weight:bold;
+    font-size: 10px;
+    margin-bottom:10px;
+    color:hsla(0, 100%, 58%, 0.911);
+    margin-top:-10px;
+}
+
 #input-section input{
     width:360px;
     height:60px;
@@ -80,6 +95,8 @@ header h1{
     border: 0.1em solid hsla(233, 13%, 75%, 0.911);
     margin-bottom:20px;
 }
+
+
 
 #input-section input::placeholder{
     padding-left:4px;
@@ -89,13 +106,18 @@ header h1{
     color:hsla(233, 13%, 75%, 0.911);
 }
 
+#input-section input[type="email"]{
+    font-size:16px;
+    color:hsl(234, 29%, 20%);
+}
+
 #input-section input{
     padding-left:25px;
     font-family: 'Roboto';
 }
 
 #botao{
-    width:360px;
+    width:385px;
     height:60px;
     background-color: hsl(234, 29%, 20%);
     border-radius:7px;
@@ -119,6 +141,101 @@ header h1{
 }
 
 #right{
-    margin:0;
+    margin:0 auto;
+    width:fit-content;
+}
+
+#right-image{
+    width:fit-content;
+    padding:40px;
+}
+
+
+#okMessage{
+    display:none;
+    /*block*/
+    width:fit-content;
+    height:fit-content;
+    background-color:white;
+    border-radius:2em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+}
+#divImage{
+    margin-bottom:50px;
+}
+
+#container-all{
+    padding: 40px;
+}
+
+#containerHeader h1{
+    font-size:50px;
+    font-weight:700;
+    margin-bottom:30px;
+    color:hsl(234, 29%, 20%);
+}
+
+#paragraph-two p{
+    color:hsl(234, 29%, 20%);
+    font-size:16px;
+    margin-bottom:40px;
+}
+#spanEmail{
+    font-weight:bold;
+}
+
+#botao2{
+    width:360px;
+    height:60px;
+    background-color: hsl(234, 29%, 20%);
+    border-radius:7px;
+    color:hsl(231, 100%, 96%);
+    border:0;
+    font-family:'Roboto';
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    margin-bottom:30px;
+    margin-left:30px;
+}
+
+#botao2:hover{
+    background: linear-gradient(to right,hsl(345, 100%, 62%), hsl(4, 100%, 67%));
+    box-shadow: 0px 15px 30px hsla(4, 100%, 67%, 0.562);
+}
+
+.opacity {
+    animation: changeOpacity 0.3s;
+    animation-fill-mode: forwards;
+}
+.animation-botao-clicado{
+    animation: change 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes changeOpacity{
+    0% {
+        opacity:1;
+
+    }
+
+    100% {
+        opacity:0;
+        
+    }
+}
+
+@keyframes change{
+    0% {
+        width:997px;
+        height:677px;
+    }
+
+    100% {
+        width:440px;
+        height:537px;
+    }
 }
 
